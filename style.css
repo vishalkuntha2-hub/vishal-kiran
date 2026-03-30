@@ -87,3 +87,8 @@ li {
 .delete-btn:hover {
   background: #c0392b;
 }
+
+#propertyList p {
+  text-align: center;
+  color: gray;
+}
