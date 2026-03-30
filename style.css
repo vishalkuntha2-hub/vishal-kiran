@@ -91,4 +91,62 @@ li {
 #propertyList p {
   text-align: center;
   color: gray;
+}/* Panels */
+#ownerPanel, #tenantPanel {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+h2, h3 {
+  color: #2c3e50;
+}
+
+/* Logout Button */
+#dashboard button {
+  margin-top: 20px;
+  background: #e67e22;
+}
+
+#dashboard button:hover {
+  background: #d35400;
+}
+
+/* Empty message */
+.empty-msg {
+  text-align: center;
+  color: gray;
+  margin-top: 10px;
+}
+
+/* Rent Status */
+.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.unpaid {
+  color: red;
+  font-weight: bold;
+}
+
+/* Card Style */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Flex layout */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media
