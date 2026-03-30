@@ -35,4 +35,34 @@
 </section>
 
 <!-- DASHBOARD -->
-<section id
+<section id="dashboard">
+  <h2>Dashboard</h2>
+
+  <!-- Owner Panel -->
+  <div id="ownerPanel" class="hidden">
+    <h3>Owner Panel</h3>
+    
+    <input type="text" id="propertyName" placeholder="Property Name">
+    <input type="number" id="rentAmount" placeholder="Rent Amount">
+    <button class="action" onclick="addProperty()">Add Property</button>
+
+    <h4>Properties</h4>
+    <ul id="propertyList"></ul>
+  </div>
+
+  <!-- Tenant Panel -->
+  <div id="tenantPanel" class="hidden">
+    <h3>Tenant Panel</h3>
+    
+    <p>Your Rent Details:</p>
+    <ul id="tenantRent"></ul>
+
+    <button class="action" onclick="payRent()">Pay Rent</button>
+  </div>
+
+  <button onclick="logout()">Logout</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
