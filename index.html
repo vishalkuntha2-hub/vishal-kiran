@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RentEase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🏠 RentEase</h1>
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('login')">Login</button>
+    <button onclick="showSection('dashboard')">Dashboard</button>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="active">
+  <h2>Welcome to RentEase</h2>
+  <p>✔ Manage Properties Easily</p>
+  <p>✔ Track Rent Payments</p>
+  <p>✔ Manage Tenants</p>
+  <button onclick="showSection('login')">Get Started</button>
+</section>
+
+<!-- LOGIN -->
+<section id="login">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username (owner/tenant)">
+  <input type="password" id="password" placeholder="Password (1234)">
+  <button onclick="login()">Login</button>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard">
+  <h2 id="dashboardTitle">Dashboard</h2>
+
+  <div id="ownerControls">
+    <input type="text" id="propertyName" placeholder="Property Name">
+    <input type="text" id="tenantName" placeholder="Tenant Name">
+    <input type="number" id="rent" placeholder="Rent Amount">
+    <button onclick="addProperty()">Add Property</button>
+  </div>
+
+  <ul id="propertyList"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
